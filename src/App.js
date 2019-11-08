@@ -98,7 +98,7 @@ class App extends Component {
     //worked in our example, because when we called Clarifai with our the predict function, 
     //React wasn't finished updating the state. That's why we use this.state.input, because
     //imageUrl it's still updating under the covers
-    fetch('http://localhost:3001/imageurl', {
+    fetch('https://git.heroku.com/protected-temple-85720.git/imageurl', {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -108,7 +108,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
       if(response){
-        fetch('http://localhost:3001/image', {
+        fetch('https://git.heroku.com/protected-temple-85720.git/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
