@@ -25,7 +25,7 @@ class Register extends React.Component{
 
 	onEnterKeySubmitSignIn = (event) => {
 		if(event.which === 13){
-			fetch('https://git.heroku.com/protected-temple-85720.git/register', {
+			fetch('https://protected-temple-85720.git/register', {
 				method: 'post',
 				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({
@@ -49,7 +49,7 @@ class Register extends React.Component{
 	}
 
 	onSubmitSignIn = () => {
-			fetch('https://git.heroku.com/protected-temple-85720.git/register', {
+			fetch('https://protected-temple-85720.git/register', {
 				method: 'post',
 				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({

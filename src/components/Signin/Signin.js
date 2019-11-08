@@ -18,7 +18,7 @@ class Signin extends React.Component {
 		this.setState({signInPassword: event.target.value});
 	}
 	onSubmitSignIn = () => {
-		fetch('https://git.heroku.com/protected-temple-85720.git/signin', {
+		fetch('https://protected-temple-85720.git/signin', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
@@ -37,7 +37,7 @@ class Signin extends React.Component {
 
 	onEnterKeyPress = (event) => {
 		if(event.which === 13){
-			fetch('https://git.heroku.com/protected-temple-85720.git/signin', {
+			fetch('https://protected-temple-85720.git/signin', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
